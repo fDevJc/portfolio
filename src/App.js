@@ -1,25 +1,18 @@
+import React from 'react';
+import { HashRouter, Route } from 'react-router-dom';
 import './App.css';
-import About from './components/About';
-import Contact from './components/Contact';
 import Main from './components/Main';
+import WorkDetail from './components/WorkDetail';
 import Navi from './components/Navi';
-import Works from './components/Works';
 
 function App() {
   return (
-    <div>
+    <HashRouter>
       <Navi />
-      <br></br>
-      <Main />
-      <br></br>
-      <About />
-      <br></br>
-      <Works />
-      <br></br>
-      <Contact />
-      <br></br>
+      <Route path="/" exact={true} component={Main} />
+      <Route path="/work/:id" component={WorkDetail} />
       <div>© 2021, Designed & Coded by Yang Jicheol</div>
-    </div>
+    </HashRouter>
   );
 }
 

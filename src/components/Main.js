@@ -1,12 +1,15 @@
 import React from 'react';
+import Me from './Me';
+import About from './About';
+import Works from './Works';
 
 function Main() {
   return (
-    <div>
-      <div>img</div>
-      <div>Yang Jicheol</div>
-      <div>Full Stack Developer</div>
-    </div>
+    <>
+      <Me />
+      <About />
+      <Works />
+    </>
   );
 }
 
