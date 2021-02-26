@@ -26,7 +26,7 @@ const works = [
 
 function Works() {
   return (
-    <div>
+    <div className="works">
       {works.map((work) => {
         return <Work key={work.id} image={work.image} title={work.title} />;
       })}
